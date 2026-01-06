@@ -1,0 +1,1 @@
+import{_ as e,c as i,o as l,ae as o}from"./chunks/framework.Ck3L_38O.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"禁漫搜索.md","filePath":"禁漫搜索.md"}'),t={name:"禁漫搜索.md"};function s(d,a,n,c,h,r){return l(),i("div",null,[...a[0]||(a[0]=[o("",32)])])}const m=e(t,[["render",s]]);export{u as __pageData,m as default};

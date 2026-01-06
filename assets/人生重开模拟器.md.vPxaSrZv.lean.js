@@ -1,0 +1,1 @@
+import{_ as e,c as l,o as i,ae as o}from"./chunks/framework.Ck3L_38O.js";const u=JSON.parse('{"title":"人生重开模拟器插件","description":"","frontmatter":{},"headers":[],"relativePath":"人生重开模拟器.md","filePath":"人生重开模拟器.md"}'),t={name:"人生重开模拟器.md"};function r(d,a,c,n,_,h){return i(),l("div",null,[...a[0]||(a[0]=[o("",10)])])}const p=e(t,[["render",r]]);export{u as __pageData,p as default};
