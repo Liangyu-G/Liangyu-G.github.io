@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as r,ae as d}from"./chunks/framework.Ck3L_38O.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"贴表情.md","filePath":"贴表情.md"}'),n={name:"贴表情.md"};function o(l,t,s,c,i,h){return r(),a("div",null,[...t[0]||(t[0]=[d("",7)])])}const p=e(n,[["render",o]]);export{m as __pageData,p as default};

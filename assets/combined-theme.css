@@ -1,0 +1,434 @@
+/* 整合样式与动画效果 */
+
+/* 基础重置 */
+.VPNav, .VPNavBar, .VPHomeHero, .VPFeatures {
+    background: none !important;
+}
+
+/* 动态背景与装饰 */
+.site-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: linear-gradient(45deg, #e8f0ff, #fff0f9);
+    overflow: hidden;
+}
+
+.site-background::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: 
+        radial-gradient(circle at 10% 20%, rgba(100, 149, 237, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 90% 80%, rgba(255, 182, 193, 0.15) 0%, transparent 50%),
+        radial-gradient(circle, transparent 20%, rgba(255, 255, 255, 0.8) 70%);
+    animation: backgroundMove 30s linear infinite;
+}
+
+/* 动态背景动画 */
+.moving-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.moving-bg span {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: linear-gradient(45deg, #6495ED, #FFB6C1);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(100, 149, 237, 0.5);
+    animation: movingLight 15s linear infinite;
+}
+
+@keyframes movingLight {
+    0% {
+        transform: translateY(100vh) translateX(0) scale(1);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) translateX(100vw) scale(0);
+        opacity: 0;
+    }
+}
+
+/* 动态装饰元素 */
+.decoration {
+    position: fixed;
+    pointer-events: none;
+    z-index: -1;
+    font-size: 2em;
+    color: rgba(255, 255, 255, 0.3);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.decoration-top-left {
+    top: 20px;
+    left: 20px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.decoration-top-right {
+    top: 20px;
+    right: 20px;
+    animation: float 6s ease-in-out infinite reverse;
+}
+
+/* 导航栏样式 */
+.VPNav {
+    backdrop-filter: blur(10px);
+    background: linear-gradient(45deg, rgba(100, 149, 237, 0.8), rgba(255, 182, 193, 0.8)) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 2px 15px rgba(100, 149, 237, 0.2);
+}
+
+/* 标题样式 */
+.VPHomeHero .name {
+    background: linear-gradient(120deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: titleGlow 2s ease-in-out infinite alternate;
+}
+
+.VPHomeHero .text {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    animation: textFloat 3s ease-in-out infinite;
+}
+
+/* 按钮样式优化 */
+.VPButton.brand {
+    background: linear-gradient(45deg, #6495ED, #FFB6C1);
+    border: none;
+    box-shadow: 0 4px 15px rgba(100, 149, 237, 0.2);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: buttonGradient 3s ease infinite;
+    background-size: 200% 200%;
+    position: relative;
+    overflow: hidden;
+}
+
+.VPButton.brand::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.VPButton.brand:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(100, 149, 237, 0.3);
+}
+
+.VPButton.brand:hover::before {
+    left: 100%;
+}
+
+/* 功能卡片样式 */
+.VPFeature {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.VPFeature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* 统一动画定义 */
+@keyframes backgroundMove {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes titleGlow {
+    0% { filter: drop-shadow(0 0 5px rgba(255, 107, 107, 0.7)); }
+    100% { filter: drop-shadow(0 0 20px rgba(78, 205, 196, 0.7)); }
+}
+
+@keyframes textFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes buttonGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 优化滚动条 */
+::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #4a90e2, #67b26f);
+    border-radius: 4px;
+}
+
+/* 深色模式适配 */
+.dark .VPNav {
+    background: linear-gradient(45deg, rgba(100, 149, 237, 0.9), rgba(255, 182, 193, 0.9)) !important;
+}
+
+.dark .VPFeature {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* 导航栏文字颜色 */
+.VPNavBarTitle .title span,
+.VPNavBarMenu .link span {
+    color: white;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* 移动菜单样式优化 */
+.VPNavScreen {
+    background: linear-gradient(45deg, rgba(100, 149, 237, 0.95), rgba(255, 182, 193, 0.95));
+}
+
+/* 导航栏下划线 */
+.VPNavBarMenu .link.active {
+    border-bottom: 2px solid white;
+}
+
+/* 底部文本框样式 */
+.VPFeatures {
+    margin-top: 2rem;
+}
+
+.VPFeature {
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(100, 149, 237, 0.2);
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    animation: featurePopup 0.8s ease-out backwards;
+}
+
+.VPFeature:nth-child(1) { animation-delay: 0.2s; }
+.VPFeature:nth-child(2) { animation-delay: 0.4s; }
+.VPFeature:nth-child(3) { animation-delay: 0.6s; }
+
+.VPFeature:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(100, 149, 237, 0.2);
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-color: rgba(255, 182, 193, 0.3);
+}
+
+.VPFeature .box {
+    padding: 24px;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(100, 149, 237, 0.05), rgba(255, 182, 193, 0.05));
+    border-radius: 14px;
+}
+
+.VPFeature .title {
+    background: linear-gradient(120deg, #6495ED, #FFB6C1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+    margin-bottom: 12px;
+    animation: titlePulse 2s ease-in-out infinite alternate;
+}
+
+.VPFeature .details {
+    color: #666;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+.VPFeature:hover .details {
+    color: #333;
+}
+
+@keyframes featurePopup {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes titlePulse {
+    0% { filter: brightness(1); }
+    100% { filter: brightness(1.2); }
+}
+
+/* 全局布局优化 */
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+/* 内容区域布局 */
+.VPContent.is-home {
+    padding: 0 clamp(10px, 3vw, 20px);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* 按钮容器布局 */
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(5px, 1vw, 10px);
+    width: 100%;
+    max-width: min(1200px, 95vw);
+    margin: 0 auto;
+    padding: clamp(10px, 2vw, 20px) 0;
+    box-sizing: border-box;
+}
+
+/* 按钮项目布局 */
+.action {
+    margin: clamp(3px, 0.5vw, 5px);
+    flex: 0 1 auto;
+    display: flex;
+    min-width: min(160px, calc(50% - 20px));
+    max-width: 100%;
+}
+
+/* 按钮样式 */
+.VPButton.brand {
+    width: 100%;
+    text-align: center;
+    padding: 0 clamp(10px, 2vw, 20px);
+    box-sizing: border-box;
+    white-space: normal;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 主要内容区域布局 */
+.VPHomeHero .container {
+    width: 100%;
+    max-width: min(1200px, 95vw);
+    margin: 0 auto;
+    padding: 0 clamp(10px, 3vw, 20px);
+    box-sizing: border-box;
+}
+
+/* 标题区域 */
+.VPHomeHero .main {
+    max-width: 100%;
+}
+
+.VPHomeHero .heading {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    word-break: break-word;
+}
+
+.VPHomeHero .tagline {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+/* 特性卡片布局 */
+.VPFeatures .container {
+    width: 100%;
+    max-width: min(1200px, 95vw);
+    padding: clamp(10px, 3vw, 20px);
+    box-sizing: border-box;
+}
+
+.VPFeatures .items {
+    gap: clamp(10px, 2vw, 20px);
+}
+
+/* 响应式优化 */
+@media (max-width: 768px) {
+    .VPFeature {
+        margin: 5px 0;
+        width: 100%;
+    }
+    
+    .decoration {
+        display: none;
+    }
+    
+    .VPNavBar .content {
+        padding: 0 clamp(5px, 2vw, 10px);
+    }
+}
+
+/* 超小屏幕优化 */
+@media (max-width: 400px) {
+    .action {
+        min-width: calc(100% - 10px);
+    }
+    
+    .VPHomeHero .heading {
+        font-size: 1.25rem;
+    }
+    
+    .VPButton.brand {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+/* 底部特性卡片容器样式 */
+.VPFeatures .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.VPFeatures .items {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

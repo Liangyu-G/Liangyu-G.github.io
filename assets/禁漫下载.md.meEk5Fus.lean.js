@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as t,ae as r}from"./chunks/framework.Ck3L_38O.js";const m=JSON.parse('{"title":"不建议使用本插件，太危险啦","description":"","frontmatter":{},"headers":[],"relativePath":"禁漫下载.md","filePath":"禁漫下载.md"}'),i={name:"禁漫下载.md"};function c(d,a,n,h,s,l){return t(),o("div",null,[...a[0]||(a[0]=[r("",9)])])}const p=e(i,[["render",c]]);export{m as __pageData,p as default};
