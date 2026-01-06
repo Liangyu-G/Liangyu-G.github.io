@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as r,ae as o}from"./chunks/framework.Ck3L_38O.js";const p=JSON.parse('{"title":"原神启动插件","description":"","frontmatter":{},"headers":[],"relativePath":"原神启动.md","filePath":"原神启动.md"}'),n={name:"原神启动.md"};function i(l,a,s,h,d,_){return r(),t("div",null,[...a[0]||(a[0]=[o("",10)])])}const u=e(n,[["render",i]]);export{p as __pageData,u as default};
