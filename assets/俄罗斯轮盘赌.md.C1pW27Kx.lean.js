@@ -1,0 +1,1 @@
+import{_ as e,c as l,o,ae as r}from"./chunks/framework.Ck3L_38O.js";const u=JSON.parse('{"title":"左轮手枪游戏插件","description":"","frontmatter":{},"headers":[],"relativePath":"俄罗斯轮盘赌.md","filePath":"俄罗斯轮盘赌.md"}'),t={name:"俄罗斯轮盘赌.md"};function i(d,a,n,h,c,s){return o(),l("div",null,[...a[0]||(a[0]=[r("",18)])])}const p=e(t,[["render",i]]);export{u as __pageData,p as default};

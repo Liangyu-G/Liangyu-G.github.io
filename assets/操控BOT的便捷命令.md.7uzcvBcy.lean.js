@@ -1,0 +1,1 @@
+import{_ as d,c as e,o,ae as a}from"./chunks/framework.Ck3L_38O.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"操控BOT的便捷命令.md","filePath":"操控BOT的便捷命令.md"}'),c={name:"操控BOT的便捷命令.md"};function r(n,t,l,_,i,s){return o(),e("div",null,[...t[0]||(t[0]=[a("",5)])])}const p=d(c,[["render",r]]);export{m as __pageData,p as default};
