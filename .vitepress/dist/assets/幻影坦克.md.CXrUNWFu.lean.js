@@ -1,0 +1,1 @@
+import{_ as o,c as t,o as a,ae as c}from"./chunks/framework.Ck3L_38O.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"幻影坦克.md","filePath":"幻影坦克.md"}'),r={name:"幻影坦克.md"};function d(l,e,_,i,n,s){return a(),t("div",null,[...e[0]||(e[0]=[c("",5)])])}const m=o(r,[["render",d]]);export{u as __pageData,m as default};

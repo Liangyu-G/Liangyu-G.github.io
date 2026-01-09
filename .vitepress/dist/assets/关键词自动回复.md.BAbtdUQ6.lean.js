@@ -1,0 +1,1 @@
+import{_ as i,c as a,o as t,ae as e}from"./chunks/framework.Ck3L_38O.js";const E=JSON.parse('{"title":"关键词回复插件","description":"","frontmatter":{},"headers":[],"relativePath":"关键词自动回复.md","filePath":"关键词自动回复.md"}'),l={name:"关键词自动回复.md"};function h(n,s,d,o,p,k){return t(),a("div",null,[...s[0]||(s[0]=[e("",13)])])}const c=i(l,[["render",h]]);export{E as __pageData,c as default};

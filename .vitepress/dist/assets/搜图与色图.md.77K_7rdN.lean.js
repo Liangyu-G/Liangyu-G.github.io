@@ -1,0 +1,1 @@
+import{_ as a,c as t,o as r,ae as o}from"./chunks/framework.Ck3L_38O.js";const h=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"搜图与色图.md","filePath":"搜图与色图.md"}'),_={name:"搜图与色图.md"};function n(c,e,d,s,i,l){return r(),t("div",null,[...e[0]||(e[0]=[o("",5)])])}const m=a(_,[["render",n]]);export{h as __pageData,m as default};

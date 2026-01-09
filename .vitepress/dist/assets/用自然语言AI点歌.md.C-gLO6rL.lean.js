@@ -1,0 +1,1 @@
+import{_ as a,c as t,o as l,ae as _}from"./chunks/framework.Ck3L_38O.js";const u=JSON.parse('{"title":"✨ 介绍","description":"","frontmatter":{},"headers":[],"relativePath":"用自然语言AI点歌.md","filePath":"用自然语言AI点歌.md"}'),r={name:"用自然语言AI点歌.md"};function i(o,e,n,s,c,d){return l(),t("div",null,[...e[0]||(e[0]=[_("",4)])])}const h=a(r,[["render",i]]);export{u as __pageData,h as default};

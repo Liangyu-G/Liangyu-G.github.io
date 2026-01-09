@@ -1,0 +1,1 @@
+import{_ as t,c as a,o,ae as i}from"./chunks/framework.Ck3L_38O.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"AI画图.md","filePath":"AI画图.md"}'),r={name:"AI画图.md"};function l(_,e,n,s,c,d){return o(),a("div",null,[...e[0]||(e[0]=[i("",4)])])}const f=t(r,[["render",l]]);export{m as __pageData,f as default};
