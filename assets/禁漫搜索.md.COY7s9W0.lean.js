@@ -1,1 +1,0 @@
-import{_ as e,c as i,o,ae as l}from"./chunks/framework.Ck3L_38O.js";const u=JSON.parse('{"title":"🪐 JM-Cosmos","description":"","frontmatter":{},"headers":[],"relativePath":"禁漫搜索.md","filePath":"禁漫搜索.md"}'),t={name:"禁漫搜索.md"};function s(d,a,n,c,h,r){return o(),i("div",null,[...a[0]||(a[0]=[l("",36)])])}const m=e(t,[["render",s]]);export{u as __pageData,m as default};
