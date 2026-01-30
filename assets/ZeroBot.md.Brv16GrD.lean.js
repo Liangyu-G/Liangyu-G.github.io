@@ -1,0 +1,1 @@
+import{_ as l,c as p,o as t,ae as a}from"./chunks/framework.Ck3L_38O.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"ZeroBot.md","filePath":"ZeroBot.md"}'),o={name:"ZeroBot.md"};function s(e,i,u,n,r,m){return t(),p("div",null,[...i[0]||(i[0]=[a("",111)])])}const h=l(o,[["render",s]]);export{d as __pageData,h as default};

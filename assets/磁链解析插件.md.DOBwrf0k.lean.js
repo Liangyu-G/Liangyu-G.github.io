@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as r,ae as o}from"./chunks/framework.Ck3L_38O.js";const p=JSON.parse('{"title":"✨ 功能介绍","description":"","frontmatter":{},"headers":[],"relativePath":"磁链解析插件.md","filePath":"磁链解析插件.md"}'),n={name:"磁链解析插件.md"};function _(s,a,i,l,c,d){return r(),t("div",null,[...a[0]||(a[0]=[o("",4)])])}const f=e(n,[["render",_]]);export{p as __pageData,f as default};

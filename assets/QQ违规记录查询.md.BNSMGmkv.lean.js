@@ -1,0 +1,1 @@
+import{_ as a,c as t,o,ae as r}from"./chunks/framework.Ck3L_38O.js";const p=JSON.parse('{"title":"QQ违规记录查询插件","description":"","frontmatter":{},"headers":[],"relativePath":"QQ违规记录查询.md","filePath":"QQ违规记录查询.md"}'),_={name:"QQ违规记录查询.md"};function i(l,e,c,d,n,s){return o(),t("div",null,[...e[0]||(e[0]=[r("",4)])])}const h=a(_,[["render",i]]);export{p as __pageData,h as default};

@@ -1,0 +1,1 @@
+import{_ as d,c as e,o as a,ae as r}from"./chunks/framework.Ck3L_38O.js";const u=JSON.parse('{"title":"✨ 介绍","description":"","frontmatter":{},"headers":[],"relativePath":"AI自主管理群聊.md","filePath":"AI自主管理群聊.md"}'),l={name:"AI自主管理群聊.md"};function _(o,t,i,s,n,h){return a(),e("div",null,[...t[0]||(t[0]=[r("",7)])])}const m=d(l,[["render",_]]);export{u as __pageData,m as default};

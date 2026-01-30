@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as l,ae as a}from"./chunks/framework.Ck3L_38O.js";const f=JSON.parse('{"title":"弗一把","description":"","frontmatter":{},"headers":[],"relativePath":"猜CS职业选手.md","filePath":"猜CS职业选手.md"}'),r={name:"猜CS职业选手.md"};function d(n,t,s,c,i,g){return l(),o("div",null,[...t[0]||(t[0]=[a("",11)])])}const _=e(r,[["render",d]]);export{f as __pageData,_ as default};
