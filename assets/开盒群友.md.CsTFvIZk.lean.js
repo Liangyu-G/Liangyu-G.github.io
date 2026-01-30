@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as s,ae as n}from"./chunks/framework.Ck3L_38O.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"开盒群友.md","filePath":"开盒群友.md"}'),i={name:"开盒群友.md"};function l(o,a,r,p,c,d){return s(),t("div",null,[...a[0]||(a[0]=[n("",8)])])}const u=e(i,[["render",l]]);export{_ as __pageData,u as default};

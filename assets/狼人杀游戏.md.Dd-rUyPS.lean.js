@@ -1,0 +1,1 @@
+import{_ as n,c as t,o as s,ae as l}from"./chunks/framework.Ck3L_38O.js";const u=JSON.parse('{"title":"狼人杀游戏 🐺","description":"","frontmatter":{},"headers":[],"relativePath":"狼人杀游戏.md","filePath":"狼人杀游戏.md"}'),e={name:"狼人杀游戏.md"};function d(p,a,i,o,r,c){return s(),t("div",null,[...a[0]||(a[0]=[l("",82)])])}const b=n(e,[["render",d]]);export{u as __pageData,b as default};
